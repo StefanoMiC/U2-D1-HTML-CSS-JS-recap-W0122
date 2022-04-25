@@ -1,0 +1,553 @@
+<html>
+<!--
+        HTML EXERCISES
+
+        1) Create a title for this webpage
+        2) Create a heading of your choice
+        3) Create an ordered list with some list items into it
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image to each second cell of every row
+        6) Add a anchor link for every image
+        7) Merge together 2 table cells
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it into the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border assigned to it
+        15) Set the previously created table to have rounded corners
+        16) Add a margin between every paragraph
+        17) Create a class which changes font size and text weight when applied
+        18) Create a class to hide a piece of content
+        19) Add a green border to each <td>
+        20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)
+
+        JS EXERCISES
+
+        21) Given variables x = "John" and y = "Doe", write on the console "John <> Doe"
+        22) Create an object with properties such name, surname, email
+        23) Delete the email property from the previously created object
+        24) Create an array with 10 strings in it
+        25) Print in the console every string from the previous array
+        26) Create an array with 100 random numbers in it
+        27) Write a function to get the maximum and minimum values from the previously created array
+        28) Create an array of arrays, in which every array has 10 random numbers
+        29) Create a function that gets 2 arrays as parameters and returns the longest one
+        30) Create a function that gets 2 arrays of numbers as parameters and returns the one with the higher sum of values
+
+        DOM EXERCISES
+
+        31) Get the element with an id of "container" from the page
+        32) Get every <td> element from the page
+        33) Use a loop for printing the text inside of every <td> element in the page
+        34) Write a function to change the heading of the page
+        35) Write a function to add an extra row to the table
+        36) Write a function to add a class of "test" to each row in the table
+        37) Write a function to add a red background to every link in the page
+        38) Console log "Page loaded" when the page is correctly loaded
+        39) Write a function to add new items to a unordered list
+        40) Write a function to empty a list
+
+        EXTRA EXERCISES
+
+        41) Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
+        42) Create a button that will hide every image on the page when clicked
+        43) Create a button that will hide or show the table on the page when clicked
+        44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
+        45) Delete the last letter from the heading each time the user clicks on it
+        46) Change the background color of a <td> if the user clicks on it
+        47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
+        48) Add automatically a pink border to a cell when the mouse hovers it
+        49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
+        50) Write a function to remove the last table from the page
+
+        /* WHEN YOU ARE FINISHED
+          Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
+        */
+    -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises revision</title>
+
+    <style>
+        body {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        p {
+            margin-bottom: 3rem;
+        }
+
+        table {
+            /* border-collapse: collapse; */
+        }
+
+        th {
+            text-align: left;
+            padding: 0 0.5rem;
+        }
+
+        td {
+            padding: 0 0.5rem;
+            border: 2px solid green;
+        }
+
+        tr {
+            /* border: 3px solid red; */
+        }
+
+        td a {
+            color: goldenrod;
+        }
+
+        footer {
+            margin-bottom: 2rem;
+        }
+
+        .border {
+            border: 2px solid crimson;
+        }
+
+        .rounded {
+            border-radius: 20px;
+        }
+
+        .bigger-bolder {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Random Title</h1>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ol>
+    </header>
+
+    <hr>
+    <main>
+
+        <table class="border rounded">
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+                <th>Town</th>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>
+                    <p>Doe</p>
+                    <a href="https://google.com">
+                        <img src="https://images.unsplash.com/photo-1648737965772-b3385bfce64f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                            alt="random image" width="200">
+                    </a>
+                </td>
+                <td>44</td>
+                <td>Random</td>
+                <td>00 44 829 0192</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>
+                    <p>Doe</p>
+                    <a href="https://google.com">
+                        <img src="https://images.unsplash.com/photo-1648737965772-b3385bfce64f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                            alt="random image" width="200">
+                    </a>
+                </td>
+                <td>44</td>
+                <td>Random</td>
+                <td>00 44 829 0192</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>
+                    <p>Doe</p>
+                    <a href="https://google.com">
+                        <img src="https://images.unsplash.com/photo-1648737965772-b3385bfce64f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                            alt="random image" width="200">
+                    </a>
+                </td>
+                <td colspan="2">44</td>
+
+                <td><a href="epicode.com">00 44 829 0192</a></td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>
+                    <p>Doe</p>
+                    <a href="https://google.com">
+                        <img src="https://images.unsplash.com/photo-1648737965772-b3385bfce64f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                            alt="random image" width="200">
+                    </a>
+                </td>
+                <td>44</td>
+                <td>Random</td>
+                <td>00 44 829 0192</td>
+            </tr>
+        </table>
+
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tenetur voluptate magnam dolorem
+                consequatur,
+                repellendus, aliquam dignissimos laborum placeat est fugiat vitae ipsa nisi rem voluptatum. Eos beatae
+                magni
+                quibusdam?s</p>
+
+            <ul>
+                <li>unordered 1</li>
+                <li>unordered 2</li>
+                <li>unordered 3</li>
+            </ul>
+        </div>
+        <section>
+            <button class="del-imgs">delete images</button>
+            <button class="toggle-table">toggle table</button>
+        </section>
+    </main>
+    <footer>Epicode 2022 - <a href="facebook.com">something else</a></footer>
+
+    <script>
+        // JS EXERCISES
+
+        // 21) Given variables x = "John" and y = "Doe", write on the console "John <> Doe"
+        let x = "John"
+        let y = "Doe"
+
+        console.log(x + " <> " + y)
+
+        // 22) Create an object with properties such name, surname, email
+
+        const person = {
+            name: x,
+            surname: y,
+            email: "something@gmail.com"
+        }
+
+        console.log(person.email)
+        console.log(person)
+
+
+        // 23) Delete the email property from the previously created object
+
+        delete person.email
+
+        console.log(person.email)
+        // 24) Create an array with 10 strings in it
+
+        // const arr = ["str-1", "str-2", "str-3", "str-4", "str-5"]
+        const arr = []
+
+        for (let i = 1; i <= 100; i++) {
+            // arr.push("str-" + (i + 1))
+            arr.push("str-" + i)
+        }
+
+        // console.log(arr)
+
+        // 25) Print in the console every string from the previous array
+
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i])
+
+        }
+
+        // 26) Create an array with 100 random numbers in it
+
+        const randNums = []
+
+        for (let i = 0; i < 100; i++) {
+            const num = Math.floor(Math.random() * 100)
+
+            randNums.push(num)
+
+        }
+
+        // console.log(randNums)
+        // 27) Write a function to get the maximum and minimum values from the previously created array
+
+        //Function DEFINITION
+        function findMinAndMax(array) {
+            let max = array[0]
+            let min = array[0]
+
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] > max) {
+                    max = array[i]
+                }
+                if (array[i] < min) {
+                    min = array[i]
+                }
+            }
+            console.log("HIGHEST", max)
+            console.log("LOWEST", min)
+        }
+
+        //Function EXECUTION
+        findMinAndMax(randNums)
+        findMinAndMax([15, 20, 5, 90])
+
+
+        // 28) Create an array of arrays, in which every array has 10 random numbers
+        // [ [1, 2, 3, 4, 5, 6, ...], [], [], [] ]
+
+        function arrayOfArrays() {
+            let masterArr = []
+            for (let i = 0; i < 5; i++) {
+                let innerArr = []
+                // ....
+                for (let j = 0; j < 10; j++) {
+                    const randNum = Math.floor(Math.random() * 100)
+
+                    innerArr.push(randNum)
+                }
+                masterArr.push(innerArr) // [ [], [], [], [], [] ]
+            }
+
+            console.log(masterArr)
+        }
+
+        // 29) Create a function that gets 2 arrays as parameters and returns the longest one
+
+        function findLongest(arr1, arr2) {
+            if (arr1.length > arr2.length) {
+                console.log("The first one is longer!")
+            } else if (arr1.length === arr2.length) {
+                console.log("They are the same length!")
+            } else {
+                console.log("The second one is longer!")
+            }
+        }
+        // 30) Create a function that gets 2 arrays of numbers as parameters and returns the one with the higher sum of values
+
+        function findBiggestSum(arr1, arr2) {
+            let sum1 = 0
+            let sum2 = 0
+
+            for (let i = 0; i < arr1.length; i++) {
+                sum1 += arr1[i]
+            }
+
+            for (let i = 0; i < arr2.length; i++) {
+                sum2 += arr2[i]
+            }
+
+
+            if (sum1 > sum2) {
+                console.log("first is bigger")
+            } else if (sum1 === sum2) {
+                console.log("they are the same")
+            } else {
+                console.log("the second one is bigger")
+            }
+            console.log(sum1, sum2)
+        }
+
+        // DOM EXERCISES
+
+        // 31) Get the element with an class of "container" from the page
+        const container = document.querySelector(".container")
+
+        // 32) Get every <td> elements from the page
+        function changeTdColor(clr) {
+            const TDs = document.querySelectorAll("td")
+
+            for (let i = 0; i < TDs.length; i++) {
+                const td = TDs[i]
+                td.style.borderColor = clr
+            }
+        }
+        // 33) Use a loop for printing the text inside of every <td> element in the page
+
+        function printText() {
+            const TDs = document.querySelectorAll("td")
+
+            for (let i = 0; i < TDs.length; i++) {
+                const td = TDs[i]
+                console.log(td.innerText)
+            }
+        }
+        // 34) Write a function to change the heading of the page
+
+        function changeHeading(text) {
+            const heading = document.querySelector("h1")
+
+            heading.innerText = text
+        }
+        // 35) Write a function to add an extra row to the table
+
+        function addRow() {
+            const table = document.querySelector("table")
+
+            const tr = document.createElement("tr")
+
+            table.firstElementChild.appendChild(tr)
+        }
+        // 36) Write a function to add a class of "test" to each row in the table
+
+
+        function addTest() {
+            const TRs = document.querySelectorAll("tr")
+            console.log(TRs)
+
+            for (let i = 0; i < TRs.length; i++) {
+                const tr = TRs[i]
+                tr.classList.add("test")
+            }
+        }
+        // 37) Write a function to add a red background to every link in the page
+
+        function addBgs() {
+            const links = document.querySelectorAll("a")
+
+            for (let i = 0; i < links.length; i++) {
+                const link = links[i]
+                link.style.backgroundColor = "red"
+            }
+        }
+        // 38) Console log "Page loaded" when the page is correctly loaded
+
+        // window.onload = function () {
+        //     alert("page loaded")
+        // }
+        // 39) Write a function to add new items to an unordered list
+
+        function addLis() {
+            const ul = document.querySelector("ul")
+
+            for (let i = 0; i < 10; i++) {
+                const li = document.createElement("li")
+                li.innerText = "item-" + (i + 1)
+
+                ul.appendChild(li)
+            }
+        }
+        // 40) Write a function to empty a list
+
+        function emptyList() {
+            const ul = document.querySelector("ul")
+
+            ul.innerHTML = ""
+        }
+
+        // EXTRA EXERCISES
+
+        // 41) Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
+        window.onload = function () {
+            const links = document.querySelectorAll("a")
+            for (let i = 0; i < links.length; i++) {
+                const link = links[i]
+                const href = link.getAttribute("href")
+                // link.onmouseover = function () { alert(href) }
+                link.addEventListener("mouseover", function () { alert(href) })
+            }
+
+            // 42) Create a button that will hide every image on the page when clicked
+            const delImgs = document.querySelector(".del-imgs")
+            delImgs.onclick = function () {
+                const imgs = document.querySelectorAll("img")
+
+                for (let i = 0; i < imgs.length; i++) {
+                    const img = imgs[i]
+                    // img.style.display = "none"
+                    img.remove()
+                }
+            }
+
+            // 43) Create a button that will hide or show the table on the page when clicked
+            const toggleTable = document.querySelector(".toggle-table")
+            toggleTable.onclick = function () {
+                const table = document.querySelector("table")
+
+                if (table.style.display === "none") {
+                    table.style.display = "inline-block"
+                } else {
+                    table.style.display = "none"
+                }
+            }
+            // 45) Delete the last letter from the heading each time the user clicks on it
+
+            const h1 = document.querySelector("h1")
+            h1.onclick = function () {
+                h1.innerText = h1.innerText.slice(0, h1.innerText.length - 1)
+            }
+
+
+            // 48) Add automatically a pink border to a cell when the mouse hovers it
+            const TDs = document.querySelectorAll("td")
+
+            for (let i = 0; i < TDs.length; i++) {
+                const td = TDs[i]
+                td.onmouseover = function () {
+                    td.style.borderColor = "pink"
+                }
+                // 46) Change the background color of a <td> if the user clicks on it
+                td.onclick = function () {
+                    td.style.backgroundColor = "#333"
+                    td.style.color = "white"
+                }
+            }
+
+        }
+
+        function addNewLine(name, surname, age, town, phone) {
+            const table = document.querySelector("table")
+
+            const tr = document.createElement("tr")
+
+            const firstName = document.createElement("td")
+            firstName.innerText = name
+            const lastName = document.createElement("td")
+            lastName.innerText = surname
+            const personAge = document.createElement("td")
+            personAge.innerText = age
+            const place = document.createElement("td")
+            place.innerText = town
+            const tel = document.createElement("td")
+            tel.innerText = phone
+
+            tr.appendChild(firstName)
+            tr.appendChild(lastName)
+            tr.appendChild(personAge)
+            tr.appendChild(place)
+            tr.appendChild(tel)
+            // <tr><td><td><td><td><td></tr>
+            table.firstElementChild.appendChild(tr)
+
+
+        }
+        // 44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
+        // 47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
+        // 49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
+        // 50) Write a function to remove the last table from the page
+
+        /* WHEN YOU ARE FINISHED
+          Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
+        */
+
+    </script>
+</body>
+
+</html>
